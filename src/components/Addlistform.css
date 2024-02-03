@@ -1,0 +1,28 @@
+.formcontainer{
+    background-color: rgba(146, 146, 247, 0.771);
+    margin-bottom: 5px;
+    margin:7px;
+    border-radius: 5px;
+   
+}
+form{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+   padding: 15px;
+}
+form input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 3px;
+    line-height: 25px;
+}
+form input:hover{
+    background-color: rgba(243, 238, 238, 0);
+    color:rgb(249, 250, 252);
+    border: none;
+}
+form input:active{
+    border: none;
+}
