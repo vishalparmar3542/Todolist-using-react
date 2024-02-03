@@ -22,14 +22,23 @@ function App() {
 }]
    const [list,setList]=useState(obj);
 function handleadd(obj){
+  const len=list.length;
+ 
+ //console.log(list[len-1].key);;
+ let newkey
+ if(len>0){
+ newkey=list[len-1].key;
+ }else{
+   newkey=1;
+ }
      setList([...list,
-    {...obj,key:list.length+1}]);
+    {...obj,key:newkey+1}]);
 }
 const deltask=(obj) => {
     setList((list) =>
          {
       return list.filter((curob) => {
-        console.log(obj);
+        // console.log(obj);
        return curob.key != obj});
          }
     );

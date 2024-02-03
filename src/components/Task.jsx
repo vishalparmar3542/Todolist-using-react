@@ -2,7 +2,7 @@ import React from 'react'
 import './Task.css'
 
 export const Task = ({list,del}) => {
-  console.log(list)
+  // console.log(list)
   function handledelete(e){
     e.stopPropgation;
     const key=e.target.id;

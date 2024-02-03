@@ -16,7 +16,7 @@ export const Addlistform = ({addtask}) => {
   }
   function handleclick(e){
     e.stopPropagation();
-     console.log(e.target.value);
+    //  console.log(e.target.value);
      setTask({...task,
       [e.target.name]:e.target.value});
    
